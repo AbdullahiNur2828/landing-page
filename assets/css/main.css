@@ -99,11 +99,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-color: #1A3636 !important; /* New background color */
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #D6BD98 15%, #677D6A 85%) !important; /* New gradient colors */
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #D6BD98 15%, #677D6A 85%) !important; /* New gradient colors */
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #D6BD98 15%, #677D6A 85%) !important; /* New gradient colors */
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #D6BD98 15%, #677D6A 85%) !important; /* New gradient colors */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2859,6 +2859,18 @@ input, select, textarea {
 
 		}
 
+	.features.align-buttons li {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		padding-bottom: 20px; /* Adjust padding if needed */
+	}
+		
+	.features.align-buttons .actions.special {
+		margin-top: auto;
+	}
+		
 /* Statistics */
 
 	.statistics {
@@ -3783,3 +3795,23 @@ input, select, textarea {
 			}
 
 		}
+/* CSS class for circular and centered image */
+.rounded-circle {
+	height: 150px; /* Desired height */
+	width: 150px;  /* Desired width */
+	border-radius: 50%;
+	object-fit: cover; /* Ensures the image covers the entire circle */
+	object-position: top; /* Centers the image within the circle */
+	display: block; /* Ensures image is block-level to center properly */
+	margin: 0 auto; /* Centers the image horizontally */
+  }
+  /* CSS class for circular and centered image */
+.rounded-ualbertaLogo {
+	height: 250px; /* Desired height */
+	width: 250px;  /* Desired width */
+	border-radius: 50%;
+	object-fit: cover; /* Ensures the image covers the entire circle */
+	object-position: center; /* Centers the image within the circle */
+	display: block; /* Ensures image is block-level to center properly */
+	margin: 0 auto; /* Centers the image horizontally */
+  }
